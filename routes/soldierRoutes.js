@@ -6,6 +6,7 @@ const soldierController = require('../controllers/soldierControllers');
 soldierRouter.get('/soldier', soldierController.fetchSoldier);
 soldierRouter.get('/soldier/:id', soldierController.fetchSoldier);
 soldierRouter.post('/soldier', soldierController.createNewSoldier);
-soldierRouter.put('/soldier/:id', soldierController.updateSoldier; soldierRouter.delete('/soldier/:id', soldierController.deleteSoldier);
+soldierRouter.put('/soldier/:id', soldierController.updateSoldier);
+soldierRouter.delete('/soldier/:id', soldierController.deleteSoldier);
 
-        module.exports = soldierRouter;
+module.exports = soldierRouter;
