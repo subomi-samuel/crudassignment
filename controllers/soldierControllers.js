@@ -15,11 +15,11 @@ exports.createNewSoldier = (req, res) => {
 };
 
 exports.fetchSoldiers = (req, res) => {
-    Soldier.find({}, (error, soldier) => {
+    Soldier.find({}, (error, soldiers) => {
         if (error) {
             return res.status(500).json({ message: error });
         } else {
-            return res.status(200).json({ message: soldier });
+            return res.status(200).json({ message: soldiers });
         }
     });
 };
