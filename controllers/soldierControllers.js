@@ -14,7 +14,7 @@ exports.createNewSoldier = (req, res) => {
     });
 };
 
-exports.fetchSoldier = (req, res) => {
+exports.fetchSoldiers = (req, res) => {
     Soldier.find({}, (error, soldier) => {
         if (error) {
             return res.status(500).json({ message: error });
