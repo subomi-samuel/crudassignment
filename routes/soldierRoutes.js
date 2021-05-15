@@ -4,9 +4,9 @@ const soldierController = require('../controllers/soldierControllers');
 
 
 soldierRouter.get('/soldiers', soldierController.fetchSoldiers);
-soldierRouter.get('/soldier/:id', soldierController.fetchSoldier);
-soldierRouter.post('/soldier', soldierController.createNewSoldier);
-soldierRouter.put('/soldier/:id', soldierController.updateSoldier);
-soldierRouter.delete('/soldier/:id', soldierController.deleteSoldier);
+soldierRouter.get('/soldiers/:id', soldierController.fetchSoldier);
+soldierRouter.post('/soldiers', soldierController.createNewSoldier);
+soldierRouter.put('/soldiers/:id', soldierController.updateSoldier);
+soldierRouter.delete('/soldiers/:id', soldierController.deleteSoldier);
 
 module.exports = soldierRouter;
