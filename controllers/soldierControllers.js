@@ -46,7 +46,7 @@ exports.updateSoldier = (req, res) => {
             return res.status(404).json({ message: "Soldier not found. " });
         } else {
             soldier.save((error, updatedSoldier) => {
-                if (erorr) {
+                if (error) {
                     return res.status(500).json({ message: error });
                 } else {
                     return res.status(200).json({ message: "Soldier details updated successfully." });
